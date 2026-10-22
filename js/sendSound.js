@@ -206,7 +206,7 @@ function soundRun() {
 // }
 
 const FSK_FRAME_LEN    = 19;     // マイコンが1回に受け取るバイト数
-const FSK_BLOCK_GAP_MS = 100;    // 送信後、次を送るまでの間隔
+const FSK_BLOCK_GAP_MS = 400;    // 送信後、次を送るまでの間隔
 const fskTx = new FskTx({ postGapMs: FSK_BLOCK_GAP_MS });
 
 function sendDataBySound(arrayData) {
