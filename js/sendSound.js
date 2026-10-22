@@ -86,6 +86,7 @@ const FSK_BAUD = 1000;
 const FSK_F0 = 2400;      // "0"
 const FSK_F1 = 4400;      // "1"
 
+
 /**************************************
  * 接続処理
  * 最初の音声データが乱れるので、ダミーのデータを送る
@@ -216,8 +217,9 @@ function soundRun() {
 // }
 
 const FSK_FRAME_LEN    = 19;     // マイコンが1回に受け取るバイト数
-const FSK_BLOCK_GAP_MS = 400;    // 送信後、次を送るまでの間隔
-const fskTx = new FskTx({ postGapMs: FSK_BLOCK_GAP_MS });
+const FSK_BLOCK_GAP_MS = 100;    // 送信後、次を送るまでの間隔
+//const fskTx = new FskTx({ postGapMs: FSK_BLOCK_GAP_MS });
+fskTx = new FskTx({ baud: FSK_BAUD, f0: FSK_F0, f1: FSK_F1, postGapMs: FSK_BLOCK_GAP_MS });
 
 function sendDataBySound(arrayData) {
     //0〜255の整数にそろえる(未入力の要素は0)
