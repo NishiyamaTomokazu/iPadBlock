@@ -47,7 +47,7 @@ function sendHID_iPad() {
         	sendArray[j + 3] = Number(lines[i * 16 + j]);			
 		}
 		sendDataBySound(sendArray);  				
-    	sleep(500);   		  
+    	//sleep(500);   		  
 		//console.log(sendArray);
 		document.form6.textarea5.value +=sendArray+"\n";
 	}
