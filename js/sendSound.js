@@ -82,12 +82,12 @@ let sendDataArray = Array(19);
  * 
  * 
 **************************************/
-//const FSK_BAUD = 1000;
-//const FSK_F0 = 2400;      // "0"
-//const FSK_F1 = 4400;      // "1"
-const FSK_BAUD = 500;
-const FSK_F0 = 1200;      // "0"
-const FSK_F1 = 2200;      // "1"
+const FSK_BAUD = 1000;
+const FSK_F0 = 2400;      // "0"
+const FSK_F1 = 4400;      // "1"
+//const FSK_BAUD = 500;
+//const FSK_F0 = 1200;      // "0"
+//const FSK_F1 = 2200;      // "1"
 
 
 /**************************************
